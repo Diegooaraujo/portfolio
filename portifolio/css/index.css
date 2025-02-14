@@ -4,25 +4,25 @@
     box-sizing: border-box;
     font-family: "Poppins", serif;
 }
-.body{
-    max-width: 1440px;
-}
+
+
 
 /*menu*/
 #menu.open{
     left: 0;
+    
+    
 }
 #menu{
     background-color: #1B98E0;
     position: absolute;
-    left :-1800px;
+    left :-2000px;
     top: 0;
     width: 100%;
     z-index: 20;
     padding:30px 0 20px 50px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: left 0.3s ease; 
-    
     
 }
 #menu h4{
@@ -85,6 +85,7 @@
 
 header{
     max-width:200px ;
+    
     
 }
 
@@ -874,7 +875,20 @@ footer{
 
 /*responsividade*/
 
+@media screen and (min-width:1500px){
+    body{
+      max-width: 1440px;
+      height: 100vh;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      
+      
+    }
+  }
 @media screen and (max-width: 1439px) {
+    
     .apresentacaoImg img{
         width: 50%;
         height: 100%;
