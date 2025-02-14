@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+.body{
+    max-width: 1440px;
+}
+
+/*menu*/
+#menu.open{
+    left: 0;
+}
+#menu{
+    background-color: #1B98E0;
+    position: absolute;
+    left :-1800px;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    padding:30px 0 20px 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease; 
+    
+    
+}
+#menu h4{
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+#menu h4:hover{
+    color: white;
+}
+
+.links{
+    margin: 30px 0;
+}
+.links a {
+    margin: 10px;
+}
+
+#menu .links img{
+    width: 30px;
+}
+.rotas {
+    display: flex;
+
+}
+.rota{
+    display: flex;
+    flex-direction: column;
+   
+    width: 380px;
+}
+
+.rota a {
+    font-size: 50px;
+    font-family: "Inknut Antiqua", serif;
+    margin: -20px 50px -20px 0;
+    text-decoration: none;
+    color: black;
+    transition: color 0.4s;
+}
+.rota a:first-child {
+    margin: 0px 50px -20px 0;
+}
+.rota a:last-child{
+    margin: -20px 50px 0px 0;
+}
+.rota a:hover{
+    color: white;
+}
+
+.rotaInfo p{
+    padding: 23px 0 3px 0;
+    margin: 36px 0;
+    
+    width: 100%;
+}
+.rotaInfo p:first-child{
+    padding:56px 0 10px 0;
+    margin-top: 0;
+}
+.rotaInfo p:last-child{
+    padding:30px 0 30px 0;
+    margin-bottom: 0;
+}
+
+/*menu*/
+
+/*section inicial*/
+header{
+    position: absolute;
+    padding: 40px 70px;
+}
+header h2{
+    font-weight: 400;
+    font-size: 20px;
+    color: #006494;
+    cursor: pointer;
+}
+.handingCode{
+    position: absolute;
+    left: 70px;
+    top: 90px;
+}
+.conteinerProjetos{
+    display: flex;
+    
+    
+}
+.direita{
+    width: 50%;
+}
+.left{
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.text .textSobre{
+    font-family: "Inknut Antiqua", serif;
+    
+    color: #fff;
+    text-shadow: 1px 1px 0 black, 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
+    font-size: 60px;
+    /* margin: 0px 0px -40px 0 ; */
+    line-height: 1.5;
+
+}
+.text h1 span{
+    color: #006494;
+  
+    font-family: "Inknut Antiqua", serif;
+    font-size: 60px;
+    line-height: 1.5;
+}
+.text p {
+    width: 600px;
+    color: #006494;
+    margin-top: 10px;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica a animação ao h1 */
+.textSobre, .text h1 {
+    animation: fadeInSlideUp 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s; /* Delay para que o efeito aconteça após um breve momento */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+.text p {
+    animation: fade 1s ease-out forwards;
+    opacity: 0;
+    animation-delay:1.3s;
+}
+
+
+
+/*section inical*/
+
+/*projetos*/
+.projects {
+    margin-top: 80px;
+}
+
+.projects h1{
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 500;
+}
+
+.trabalhos{
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 60px;
+}
+
+/*projetos*/
+
+/*footer*/
+
+footer{
+    background-color: #247BA0;
+    padding: 0 100px;
+}
+.contato{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.contato h1{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    
+}
+
+.links{
+    margin: 30px 0;
+}
+.links a {
+    margin: 10px;
+    
+}
+.links a img{
+    width: 50px;
+
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social a {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.social a img{
+    width: 50px;
+    margin: 20px 20px 0 0;
+}
+
+.desenvolvedor{
+    margin-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+/* projetos */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    
+}
+
+
+.projetos {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+}
+
+.projetoLeft {
+   
+    min-width: 500px;  /* Imagem menor inicialmente */
+    height: 300px;
+    background-position: top;
+    background-size: cover;
+    box-shadow: 1px 1px 6px black;
+    border-radius: 30px;
+    margin-right: 50px;
+    transition: transform 0.5s ease, box-shadow 0.5s  ease; /* Transição suave para transformação */
+    transform: perspective(1000px) scale(0.8) rotateY(16deg); /* Começa pequena e inclinada */
+}
+
+
+/* Quando passar o mouse, a imagem cresce e fica reta */
+.projetoLeft:hover {
+    transform: perspective(1000px) scale(1) rotateY(0deg); /* Imagem cresce e fica reta */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); /* A sombra se expande com o hover */
+}
+.projetoRight {
+    min-width: 500px;  /* Imagem menor inicialmente */
+    height: 300px;
+    box-shadow: 1px 1px 6px black;
+    border-radius: 30px;
+    margin-right: 50px;
+    transition: transform 0.5s ease,  box-shadow 0.5s  ease; /* Transição suave para transformação */
+    transform: perspective(1000px) scale(0.8)  rotateY(-16deg);  /* Começa pequena e inclinada */
+}
+.projetoRight:hover {
+    transform: perspective(1000px) scale(1) rotateY(0deg); /* Imagem cresce e fica reta */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); /* A sombra se expande com o hover */
+}
+/* #BuscaCep{
+    
+    background-position: top;
+    background-size: cover;
+}
+#QrCode{
+     
+    background-position: top;
+    background-size: cover;
+}
+#listaDeTarefas{
+    
+    background-position: top;
+    background-size: cover;
+}
+#Amigo-Secreto{
+    
+    background-position: top;
+    background-size: cover;
+}
+#numeroSecreto{
+    
+    background-position: top;
+    background-size: cover;
+} */
+
+.descProjeto {
+    width: 500px;
+}
+
+.descProjeto h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.descProjeto p{
+    margin-bottom: 30px;
+    font-family:  "Poppins", serif;
+}
+.descProjeto_img img{
+    width: 40px;
+    margin:0px 10px 20px 0px;
+}
+.descProjeto a{
+  
+    background-color: #1B98E0;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    
+    
+
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+
+}
+.gitHub{
+    background-color: rgb(66, 66, 66)!important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.gitHub img {
+    width:25px;
+
+}
+
+/* Animação para a classe 'left' vindo da esquerda */
+@keyframes revealLeftToCenter {
+    0% {
+      opacity: 0;
+      transform: translateX(200px); /* Começa fora da tela à esquerda */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Vai para a posição central */
+    }
+  }
+  
+  /* Animação para a classe 'right' vindo da direita */
+  @keyframes revealRightToCenter {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px); /* Começa fora da tela à direita */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Vai para a posição central */
+    }
+  }
+  
+  /* Inicializando os projetos com a animação */
+  .projetos.left.reveal {
+    opacity: 0; /* Começa invisível */
+    transform: translateX(100px); /* Começa à esquerda */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .projetos.right.reveal {
+    opacity: 0; /* Começa invisível */
+    transform: translateX(-100px); /* Começa à direita */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Quando o projeto entra na tela, aplica a animação */
+  .projetos.left.reveal.visible {
+    animation: revealLeftToCenter 1s forwards; /* Animação de entrada da esquerda */
+  }
+  
+  .projetos.right.reveal.visible {
+    animation: revealRightToCenter 1s forwards; /* Animação de entrada da direita */
+  }
+/*projetos */
+
+
+/**/
+
+@media screen and (max-width: 1345px){
+   .direita {
+        position: relative;
+   }
+   .conteinerProjetos{
+        min-height: 700px;
+   }
+   .abtrato{
+        width: 100%;
+        height: 100%;
+   }
+   .handingCode{
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+   }
+   .text p{
+    width: 90%;
+   }
+}
+
+@media screen and (max-width: 1126px){
+    .descProjeto p {
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+    .projetos{
+        width: 100%;
+    }
+   
+
+}
+
+@media screen and (max-width: 980px){
+   .projetos{
+        display: flex;
+        flex-direction: column;
+   }
+   .projetoLeft{
+        margin-bottom: 15px;
+        width: 70%;
+       ;
+   }
+   .projetoRight{
+        margin-bottom: 15px;
+        width: 70%;
+   }
+   .descProjeto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+   .projetos.right .descProjeto{
+        order: 2;
+   }
+   .projetos.left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+   .container{
+    margin: 0;
+   }
+   footer{
+        margin-top: 20px;
+   }
+    
+}
+
+
+
+
+@media screen and (max-width: 840px){
+    .left{
+        width: 100%;
+    }
+    .direita{
+        display: none;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+

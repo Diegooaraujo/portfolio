@@ -1,0 +1,992 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+.body{
+    max-width: 1440px;
+}
+
+/*menu*/
+#menu.open{
+    left: 0;
+}
+#menu{
+    background-color: #1B98E0;
+    position: absolute;
+    left :-1800px;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    padding:30px 0 20px 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease; 
+    
+    
+}
+#menu h4{
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+#menu h4:hover{
+    color: white;
+}
+
+#menu .links img{
+    width: 30px;
+}
+.rotas {
+    display: flex;
+
+}
+.rota{
+    display: flex;
+    flex-direction: column;
+   
+    width: 380px;
+}
+
+.rota a {
+    font-size: 50px;
+    font-family: "Inknut Antiqua", serif;
+    margin: -20px 50px -20px 0;
+    text-decoration: none;
+    color: black;
+    transition: color 0.4s;
+}
+.rota a:first-child {
+    margin: 0px 50px -20px 0;
+}
+.rota a:last-child{
+    margin: -20px 50px 0px 0;
+}
+.rota a:hover{
+    color: white;
+}
+
+.rotaInfo p{
+    padding: 23px 0 3px 0;
+    margin: 36px 0;
+    
+    width: 100%;
+}
+.rotaInfo p:first-child{
+    padding:56px 0 10px 0;
+    margin-top: 0;
+}
+.rotaInfo p:last-child{
+    padding:30px 0 30px 0;
+    margin-bottom: 0;
+}
+
+/*menu*/
+
+header{
+    max-width:200px ;
+    
+}
+
+header h3{
+    color:#1B98E0;
+    font-weight: 300;
+    padding: 10px 40px; 
+    cursor: pointer;
+    transition: color 1.3s;
+}
+header h3:hover{
+    color:#13293D
+
+}
+h1{
+    font-family: "Inknut Antiqua", serif;
+    
+}
+
+/*section topo*/
+
+.topo{
+    max-height: 700px;
+    min-width: 100%;
+    display: flex;
+    
+}
+.apresentacao{
+    
+    width: 50%;
+    height:700px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} 
+.apresentacaoText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apresentacaoText .text{
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 0 black, 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
+    font-family: "Inknut Antiqua", serif;
+    line-height: 1.5;
+    
+} 
+ .apresentacao .textName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+    
+.textName h1{
+    font-size: 60px;
+    line-height: 1.5;
+} 
+.apresentacaoText h1 span{
+    color: #006494;
+    z-index: 3;
+    font-family: "Inknut Antiqua", serif;  
+}
+.right{
+    width: 50%;
+    height:700px;
+}
+
+.apresentacaoImg{
+    width: 50%;
+    height: 100%;
+}
+
+.imgVector{
+    width: 800px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ilustracao {
+    z-index: 2;
+    position: absolute;
+    right: 160px;
+    top: 150px;
+}
+.imgIlustracao{
+    display: flex;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica a animação ao h1 */
+.text, .textName h1 {
+    animation: fadeInSlideUp 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s; /* Delay para que o efeito aconteça após um breve momento */
+    }
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+.apresentacaoText p {
+    animation: fade 1s ease-out forwards;
+    opacity: 0;
+    animation-delay:1.3s;
+    color: #006494
+} 
+
+
+
+
+
+
+/*section topo*/
+
+/*section tecnologias*/
+
+.tecnologias{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.tecnologias h1{
+    font-family: "Inknut Antiqua", serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.tecnologias p {
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.icones img{
+    width: 90px;
+    margin: 20px;
+}
+
+/* Animação para os ícones trocarem de lugar */
+@keyframes shuffleIcons {
+    0% {
+        transform: translate(0, 0); /* Posição inicial */
+    }
+    25% {
+        transform: translate(0px, 0px); /* Primeiro ícone se move */
+    }
+    50% {
+        transform: translate(10px, 10px); /* Segundo ícone se move */
+    }
+    75% {
+        transform: translate(10px, -10px); /* Terceiro ícone se move */
+    }
+    100% {
+        transform: translate(0, 0); /* Volta para o lugar original */
+    }
+}
+
+/* Aplica a animação nos ícones */
+/* Classe para ativar a animação quando a seção entra na tela */
+.icones.animate img {
+    animation: shuffleIcons 2s ease-in-out forwards; /* Animação que move os ícones */
+    opacity: 1; /* Torna os ícones visíveis */
+}
+
+/* Deixa um pequeno delay para cada ícone para criar um efeito mais dinâmico */
+.icones img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.icones img:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.icones img:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.icones img:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.icones img:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.icones img:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.icones img:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.icones img:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+.icones img:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+.icones img:nth-child(10) {
+    animation-delay: 1.8s;
+}
+@media screen and (max-width: 1354px) {
+    .icones img{
+        width: 6%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .icones img{
+        width: 60px;
+    }
+}
+
+/*section tecnologias*/
+
+/*section meusProjetos*/
+
+.meusProjetos{
+    text-align: center;
+}
+
+.meusProjetos h1{
+    font-family: "Inknut Antiqua", serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.meusProjetos h1 span{
+    color: #006494;
+    font-family: "Inknut Antiqua", serif;
+}
+
+.meusProjetos p{
+    width:600px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.conteinerProjeto{
+    display: flex;
+    justify-content: space-around;
+    margin: 70px;
+    flex-wrap: wrap;
+}
+.projeto{
+    min-width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.7s;
+    display: flex;
+    flex: 1;
+}
+.projeto:hover{
+    flex:1.5;   
+}
+
+#amigo-secreto{
+    background-image: url('../img/Amigo-Secreto.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+#buscaCep{
+    background-image: url('../img/buscaCep.png');
+    background-position: center;
+    background-size: cover;
+}
+#qrCode{
+    background-image: url('../img/qrCode.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.verTodos{
+    color: #006494;
+    font-size: 20px;
+    text-decoration: none;
+    
+
+}
+
+/*section meusProjetos*/
+/*section cursos*/
+
+.cursos{
+    
+    min-height: 760px;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.conteinerCursos{
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+    position: relative;
+    
+}
+.cursos h1{
+    text-align: center;
+    padding: 30px 0px;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.curso {
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 310px;
+    height: 230px;
+    /* padding: 0px 20px; */
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.342);
+    opacity: 0;
+    transform: translateY(20px); /* Deslocados para baixo inicialmente */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Suaviza a transição */
+}
+.curso img{
+    
+    width: 70px;
+}
+.curso .vector2{
+    margin-top: 20px;
+    width: 40%;
+   
+}
+.curso div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* Estilo para o popup */
+.hide{
+    display: none !important; /* Assegura que o popup seja completamente escondido */
+}
+.popup {
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    z-index: 9999; /* Certifique-se de que o z-index é alto */
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    height: 500px;
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+    
+  }
+  
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+  
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px 0px 0px 20px;
+    
+  }
+  
+  .popup .exit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 30%;
+    cursor: pointer;
+    font-weight: bold;
+    
+  }
+  
+  .popup .popup-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .popup .popup-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .popup .popup-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .popup .popup-duration {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .conteiner-certificado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+    width: 60%;
+    background-color: #006494;
+    border-radius: 0px 20px 20px 0;
+  }
+  .certificado-img {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.685);
+  }
+/* .php{
+    display: flex;
+    z-index: 30;
+    width: 1000px;
+    height: 550px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px black;
+    
+
+}
+.php .leftCer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+    padding: 30px 0 0 30px;
+    
+}
+.php .descCer{
+    display: flex; 
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.php .descCer img{
+    margin: 0 20px 0 0;
+    
+}
+.php .leftCer img{
+    width: 70px;
+   
+}
+.php .leftCer .cer{
+    width: 500px;
+    border: 1px solid black;
+}
+.php .rightCer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+.php .rightCer .exit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height:30px;
+    background-color: red;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    margin: 40px;
+}
+.php .rightCer h1{
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+}
+.hide{
+    display: none;
+} */
+
+.fundo{
+    background-color: #13293D;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 250px;
+}
+.verTodosCursos{
+    color: #fff;
+    font-size: 20px;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+/* Adicionando a animação para os cursos */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Começam abaixo e invisíveis */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Chegam à posição normal */
+    }
+}
+
+/* Adicionando a classe 'show' para iniciar a animação quando estiver visível */
+.curso.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.curso:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.curso:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.curso:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.curso:nth-child(4) {
+    transition-delay: 0.8s;
+}
+
+.curso:nth-child(5) {
+    transition-delay: 1s;
+}
+
+.curso:nth-child(6) {
+    transition-delay: 1.2s;
+}
+/*section cursos*/
+
+/*section certificações*/
+
+.certificacoes{
+    
+    background-image: url("../img/Vector\ 6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.conteinerCertificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    
+    
+}
+
+.certificacoes h1{
+    text-align: center;
+    padding: 20px;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 30px;
+    font-weight: 400;
+   
+}
+
+.certificado{
+    width: 300px;
+    height: 360px;
+    background-color: #fff;
+  
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.342);
+    z-index: 2;
+    
+    
+}
+.imgCertificado{
+  
+    padding-top: 40px;
+
+}
+.detalhesCertificado{
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+.detalhesCertificado p {
+    font-size: 14px;
+}
+.detalhesCertificado h3{
+    font-weight: bold;
+}
+/*section certificações*/
+.academico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+/* Section academico*/
+.academico h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    
+    
+}
+
+.formacao{
+    width: 450px;
+    height: 200px;
+    padding: 0 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formacao img{
+    
+    width: 200px;
+    margin-bottom: 20px;
+}
+.formacao h2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+/*Section academico*/
+
+/*Section experiencias*/
+
+.experiencias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: column;
+    
+
+
+}
+.experiencias h1{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+}
+.conteinerTrab{
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    
+   
+}
+.trabalho{
+    width: 600px;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.trabalhoImg img{
+    width: 100px;
+    margin: 0 17px;
+}
+.trabalhoDetalhes h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*Section experiencias*/
+
+/*footer*/
+
+footer{
+    background-color: #247BA0;
+    padding: 0 100px;
+}
+.contato{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.contato h1{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    
+}
+
+.links{
+    margin: 30px 0;
+}
+.links a {
+    margin: 10px;
+}
+.links a img{
+    width: 50px;
+
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social a {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.social a img{
+    width: 50px;
+    margin: 20px 20px 0 0;
+}
+
+.desenvolvedor{
+    margin-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+/*footer*/
+
+/*responsividade*/
+
+@media screen and (max-width: 1439px) {
+    .apresentacaoImg img{
+        width: 50%;
+        height: 100%;
+
+    }
+    
+    .ilustracao{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+    .ilustracao img{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1274px) {
+    /* .apresentacao{
+        width: 50%;
+    } */
+    /* .apresentacaoText{
+    width: 100%;
+   } */
+   /* .text {
+    width: 43%;
+   } */
+   .conteinerImg{
+    flex-wrap: wrap;
+   }
+   .imgProjeto{
+    margin: 10px;
+   }
+   
+}
+@media screen and (max-width: 1233px) {
+    /* .apresentacao{
+    
+        min-width: 50%;
+    } */
+    /* .apresentacaoText{
+        min-width: 630px;
+        margin: 20px;
+   } */
+   /* .textName{
+    display: flex;
+    flex-direction: column;
+   } */
+}
+
+@media screen and (max-width: 1035px) {
+ 
+   .apresentacaoImg img{
+        width: 60%;
+        height: 100%;
+
+    }
+    .popup{
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        width: 80%;
+
+    }
+    .popup-content{
+        width: 100%;
+        height: 40%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .conteiner-certificado{
+        width: 100%;
+        height: 60%;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .certificado-img{
+        width: 90%;
+        max-width: 500px;
+    }
+
+   
+}
+@media (max-width: 843px) {
+    .imgVector {
+        right: -800px; /* Faz a imagem sair da tela para a direita */
+        transition: right 0.9s ease-out; /* Anima a transição do movimento */
+    }
+    .right{
+        display: none;
+    }
+    .topo{
+        width: 100%;
+        min-height: 400px;
+    }
+    .apresentacao{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+  
+}
+
+
+/*responsividade*/
+
+
+
+
