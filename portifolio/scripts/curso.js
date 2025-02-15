@@ -255,37 +255,37 @@ document.addEventListener("DOMContentLoaded", function () {
   window.onload = function () {
     const cursosSet1 = document.querySelectorAll('.conteinerCursos .curso:nth-child(-n+4)'); // Primeiros 4 cursos
     const cursosSet2 = document.querySelectorAll('.conteinerCursos .curso:nth-child(n+5)'); // Próximos 4 cursos
-
+  
     function alternarCursos() {
       cursosSet1.forEach(curso => {
         curso.classList.remove('visible');
         curso.classList.add('hidden');
       });
-
-      cursosSet2.forEach(curso => {
-        curso.classList.remove('hidden');
-        setTimeout(() => {
+  
+      setTimeout(() => {
+        cursosSet2.forEach(curso => {
+          curso.classList.remove('hidden');
           curso.classList.add('visible');
-        }, 50); // Um pequeno delay para garantir que a visibilidade seja aplicada
-      });
-
+        });
+      }, 50); // Um pequeno delay para garantir que a visibilidade seja aplicada
+  
       setTimeout(() => {
         cursosSet2.forEach(curso => {
           curso.classList.remove('visible');
           curso.classList.add('hidden');
         });
-
-        cursosSet1.forEach(curso => {
-          curso.classList.remove('hidden');
-          setTimeout(() => {
+  
+        setTimeout(() => {
+          cursosSet1.forEach(curso => {
+            curso.classList.remove('hidden');
             curso.classList.add('visible');
-          }, 50);
-        });
+          });
+        }, 50);
       }, 5000);
     }
-
+  
     alternarCursos();
-    setInterval(alternarCursos, 5000);
+    setInterval(alternarCursos, 10000); // Ajuste o intervalo para garantir que a alternância ocorra corretamente
   };
 
   let vitrine = document.querySelector('.vitrine');
