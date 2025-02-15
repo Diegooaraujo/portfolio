@@ -256,38 +256,51 @@ document.addEventListener("DOMContentLoaded", function () {
     const cursosSet1 = document.querySelectorAll('.conteinerCursos .curso:nth-child(-n+4)'); // Primeiros 4 cursos
     const cursosSet2 = document.querySelectorAll('.conteinerCursos .curso:nth-child(n+5)'); // Próximos 4 cursos
   
+    console.log('Cursos Set 1:', cursosSet1);
+    console.log('Cursos Set 2:', cursosSet2);
+  
     function alternarCursos() {
+      console.log('Alternando cursos...');
+      
+      const conteiner = document.querySelector('.conteinerCursos');
+      conteiner.innerHTML = ''; // Limpa o container antes de adicionar novos cursos
+  
       cursosSet1.forEach(curso => {
         curso.classList.remove('visible');
         curso.classList.add('hidden');
+        console.log('Curso Set 1 escondido:', curso);
       });
   
-      setTimeout(() => {
-        cursosSet2.forEach(curso => {
-          curso.classList.remove('hidden');
+      cursosSet2.forEach(curso => {
+        curso.classList.remove('hidden');
+        setTimeout(() => {
           curso.classList.add('visible');
-        });
-      }, 50); // Um pequeno delay para garantir que a visibilidade seja aplicada
+          console.log('Curso Set 2 visível:', curso);
+        }, 50); // Um pequeno delay para garantir que a visibilidade seja aplicada
+        conteiner.appendChild(curso); // Adiciona o curso ao container
+      });
   
       setTimeout(() => {
         cursosSet2.forEach(curso => {
           curso.classList.remove('visible');
           curso.classList.add('hidden');
+          console.log('Curso Set 2 escondido:', curso);
         });
   
-        setTimeout(() => {
-          cursosSet1.forEach(curso => {
-            curso.classList.remove('hidden');
+        cursosSet1.forEach(curso => {
+          curso.classList.remove('hidden');
+          setTimeout(() => {
             curso.classList.add('visible');
-          });
-        }, 50);
+            console.log('Curso Set 1 visível:', curso);
+          }, 50);
+          conteiner.appendChild(curso); // Adiciona o curso ao container
+        });
       }, 5000);
     }
   
     alternarCursos();
-    setInterval(alternarCursos, 10000); // Ajuste o intervalo para garantir que a alternância ocorra corretamente
+    setInterval(alternarCursos, 5000);
   };
-
   let vitrine = document.querySelector('.vitrine');
 
   function vitrineHide() {

@@ -131,10 +131,7 @@ header h2:hover{
   overflow: hidden;
 
 }
-.conteinerCursos>.curso{
-  width: 45%;
-}
-.curso {
+.curso{
   background-color: #fff;
   width: 310px;
   height: 230px;
@@ -148,18 +145,13 @@ header h2:hover{
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
 }
-
- .curso.hidden {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-} 
+.conteinerCursos>.curso{
+  width: 40%;
+}
 
 .curso.visible {
-  display: flex;
   opacity: 1;
-  visibility: visible;
-  transition: opacity 1s ease-in-out;
+  visibility: visible; /* Torna o curso visível */
 }
 .curso div{
   margin: 0px 20px;
@@ -180,9 +172,11 @@ header h2:hover{
   position: absolute;
   bottom: 20px;
 }
- .hidden {
+.hidden {
   display: none;
-} 
+}
+
+
 
 .inicial{
   width: 100%;
