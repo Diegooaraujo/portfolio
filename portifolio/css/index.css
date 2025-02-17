@@ -541,73 +541,7 @@ h1{
     border-radius: 10px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.685);
   }
-/* .php{
-    display: flex;
-    z-index: 30;
-    width: 1000px;
-    height: 550px;
-    background-color: #fff;
-    position: absolute;
-    border-radius: 20px;
-    box-shadow: 1px 1px 6px black;
-    
 
-}
-.php .leftCer{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    display: flex;
-    padding: 30px 0 0 30px;
-    
-}
-.php .descCer{
-    display: flex; 
-    align-items: center;
-    margin: 0 0 20px 0;
-}
-.php .descCer img{
-    margin: 0 20px 0 0;
-    
-}
-.php .leftCer img{
-    width: 70px;
-   
-}
-.php .leftCer .cer{
-    width: 500px;
-    border: 1px solid black;
-}
-.php .rightCer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    position: relative;
-}
-.php .rightCer .exit{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height:30px;
-    background-color: red;
-    text-align: center;
-    border-radius: 8px;
-    cursor: pointer;
-    position: absolute;
-    top: 0; 
-    right: 0;
-    margin: 40px;
-}
-.php .rightCer h1{
-    font-size: 20px;
-    font-family: "Poppins", serif;
-    font-weight: 300;
-}
-.hide{
-    display: none;
-} */
 
 .fundo{
     background-color: #13293D;
@@ -667,6 +601,9 @@ h1{
 
 .curso:nth-child(6) {
     transition-delay: 1.2s;
+}
+.curso:nth-child(7) {
+    transition-delay: 1.4s;
 }
 /*section cursos*/
 
