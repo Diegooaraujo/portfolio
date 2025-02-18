@@ -934,6 +934,14 @@ footer{
     
   
 }
+@media screen and (max-width: 530px) {
+ 
+    .conteinerProjetos{
+        
+        justify-content: center;
+    }
+        
+}
 
 
 /*responsividade*/
