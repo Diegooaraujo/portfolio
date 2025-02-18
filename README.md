@@ -1,5 +1,4 @@
-![Tela inicla da pagina](portfolio
-/telaInicial.png)
+![Tela inicla da pagina](portfolio/telaInicial.png)
 
 # Diego Araújo - Portfolio
 
