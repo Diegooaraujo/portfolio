@@ -936,7 +936,7 @@ footer{
 }
 @media screen and (max-width: 530px) {
  
-    .conteinerProjetos{
+    .conteinerProjeto{
         display:flex;
         justify-content: center;
     }
