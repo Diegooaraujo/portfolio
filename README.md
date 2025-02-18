@@ -1,3 +1,4 @@
+![Tla inicla da pagina](./telaInicial)
 
 # Diego Araújo - Portfolio
 
