@@ -1,20 +1,6 @@
 const menuBtn = document.querySelector(".menuBtn");
 const menu = document.querySelector("#menu");
-const closeBtn = document.querySelector(".closeBtn")
-
-const cursoPhp = document.querySelector(".php")
-const exit = document.querySelector(".exit")
-
-const php = document.querySelector('#php');
-
-
-php.addEventListener('click',()=>{
-    cursoPhp.classList.remove('hide')
-})
-
-exit.addEventListener('click',()=>{
-    cursoPhp.classList.add('hide')
-})
+const closeBtn = document.querySelector(".closeBtn");
 
 menuBtn.addEventListener('click',(e)=>{
     
