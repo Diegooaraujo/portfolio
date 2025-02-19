@@ -256,11 +256,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const cursosSet1 = document.querySelectorAll('.conteinerCursos .curso:nth-child(-n+4)'); // Primeiros 4 cursos
     const cursosSet2 = document.querySelectorAll('.conteinerCursos .curso:nth-child(n+5)'); // Próximos 4 cursos
   
-    console.log('Cursos Set 1:', cursosSet1);
-    console.log('Cursos Set 2:', cursosSet2);
   
     function alternarCursos() {
-      console.log('Alternando cursos...');
+     
       
       const conteiner = document.querySelector('.conteinerCursos');
       conteiner.innerHTML = ''; // Limpa o container antes de adicionar novos cursos
@@ -268,15 +266,15 @@ document.addEventListener("DOMContentLoaded", function () {
       cursosSet1.forEach(curso => {
         curso.classList.remove('visible');
         curso.classList.add('hidden');
-        console.log('Curso Set 1 escondido:', curso);
+       
       });
   
       cursosSet2.forEach(curso => {
         curso.classList.remove('hidden');
         setTimeout(() => {
           curso.classList.add('visible');
-          console.log('Curso Set 2 visível:', curso);
-        }, 50); // Um pequeno delay para garantir que a visibilidade seja aplicada
+          
+        }, 50); //  delay para garantir que a visibilidade seja aplicada
         conteiner.appendChild(curso); // Adiciona o curso ao container
       });
   
@@ -284,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cursosSet2.forEach(curso => {
           curso.classList.remove('visible');
           curso.classList.add('hidden');
-          console.log('Curso Set 2 escondido:', curso);
+          
         });
   
         cursosSet1.forEach(curso => {
@@ -415,7 +413,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Evento para fechar o pop-up ao clicar no botão "X"
   exitPopup.addEventListener('click', () => {
     popup.classList.add('hide');
-    console.log("Popup fechado!");
+    
   });
 
 });
