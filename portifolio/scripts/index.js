@@ -98,14 +98,14 @@ document.addEventListener('DOMContentLoaded', function () {
     
             // Exibe o pop-up
             popup.classList.remove('hide');
-            console.log("Popup exibido!");
+           
         });
     });
     
     // Evento para fechar o pop-up ao clicar no botão "X"
     exitPopup.addEventListener('click', () => {
         popup.classList.add('hide');
-        console.log("Popup fechado!");
+      
     });
     
     document.getElementById('contato').onclick = function() {
