@@ -538,6 +538,10 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .conteinerProjetos{
+        margin: 0;
+        
+    }
     
 }
 
@@ -565,6 +569,10 @@ footer{
     .projects{
         overflow: hidden;
     }
+    .rotaInfo{
+        display: none;
+    }
+    
     
     
 }
