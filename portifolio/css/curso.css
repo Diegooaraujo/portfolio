@@ -613,6 +613,15 @@ footer {
 
 }
 
+@media screen and (max-width: 530px) {
+ 
+ 
+  .rotaInfo{
+      display: none;
+  }
+
+}
+
 
 
 
